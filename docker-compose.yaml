@@ -13,7 +13,7 @@ services:
     volumes:
       - 9router_data:/app/data
     healthcheck:
-      test: ["CMD", "wget", "-qO-", "http://localhost:20128/"]
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:20128/"]
       interval: 30s
       timeout: 10s
       retries: 3
